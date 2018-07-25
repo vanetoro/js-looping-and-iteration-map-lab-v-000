@@ -10,3 +10,9 @@ function nameToAttributes(arr){
                 lastName: name.split(' ')[1]}
   })
 }
+
+function attributesToPhrase(arr){
+  return arr.map(function(driver){
+    return "${driver.name} is from ${driver.hometown}"
+  })
+}
